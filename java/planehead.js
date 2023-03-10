@@ -4,17 +4,38 @@ function setup() {
 }
 
 function draw() {
-    background(100);
+    background(50);
     noStroke();
 
-    let a = color('#000000');
-    fill(a)
+    fill(0);
     beginShape();
-    vertex(70,100);
-    vertex(150,150);
-    vertex(200,180);
-    vertex(170,210);
+    vertex(50,100);
+    vertex(60,60);
+    vertex(100,100);
+    vertex(80,210);
     vertex(60,220);
-    endShape(CLOSE);
+    endShape();
+    //forehead highlight
+    fill(220);
+    beginShape();
+    vertex(280,130);
+    vertex(420,130);
+    vertex(400,220);
+    vertex(300,220);
+    endShape();
+    //top of head
+    fill(160);
+    beginShape();
+    vertex(250,80);
+    vertex(450,80);
+    vertex(420,130);
+    vertex(280,130);
+    endShape();
+    //forehead midtones
+    fill(160);
+    beginShape();
+    vertex(420,130);
+    vertex(460,100);
+    vertex()
 
 }
