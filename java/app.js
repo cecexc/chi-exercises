@@ -1,9 +1,8 @@
-function setup() {
+setup = function() {
     // Happens only once
     createCanvas(500,700);
 }
-
-function draw() {
+draw = function() {
     // Happens every single frame
     background(100);
     noStroke();
@@ -37,5 +36,18 @@ function draw() {
     stroke(50);
     strokeWeight(10) //beastly lol
     arc(200,330,300,300,0, PI + QUARTER_PI);
-}
 
+    helperCoordinates();
+    };
+
+function helperCoordinates() {
+
+    text(
+        '(' + floor(mouseX) +
+        ', ' +
+        floor(mouseY) +
+        ')',
+        mouseX,
+        mouseY
+    );
+}
